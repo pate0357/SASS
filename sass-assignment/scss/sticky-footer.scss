@@ -1,0 +1,21 @@
+@import "variable.scss";
+//.foot {
+//    background-color: black;
+//    position: relative;
+//    width: 100%;
+//    margin-top: 50%;
+//    /* negative value of footer height *///    //    clear: both;
+//
+//}
+.foot p {
+    color: $color-red;
+    text-align: center;
+}
+.foot {
+    background-color: #393939;
+    position: relative;
+    margin-top: -90%;
+    /* negative value of footer height */
+    height: 90%;
+    clear: both;
+}
