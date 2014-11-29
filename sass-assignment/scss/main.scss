@@ -1,7 +1,10 @@
 @import "sticky-footer.scss";
 @import "variable.scss";
 @import "mixins.scss";
- body:before {
+@import "media.scss";
+@import"normaliza.scss";
+//this is main page
+body:before {
     white-space: pre;
     font-family: monospace;
 }
@@ -11,30 +14,28 @@ html {
 }
 .masthead {
     text-align: center;
-    //    background-image: url(/image/1822357.jpg);
-    //    background-color: #757575;
-
 }
 .masthead h2 {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
 }
+//This is for svg image
+.iconic {
+    display: block;
+    margin-left: 33%;
+    margin-top: 13%;
+}
+//This is 4 paragraph 
 .col-4 {
-    text-align: center;
-    flex: 1;
-    background-color: #ddd4bc;
-    width: $col-4-width;
-    padding-left: $col-4-padding;
-    padding-right: $col-4-padding;
-    margin: $col-margin;
-    float: left;
     @include col-4;
 }
 .col-4 {
-    opacity: 1;
+    opacity: 0.5;
+    color: white;
 }
 .col-4:hover {
-    opacity: 0.5;
+    opacity: 1;
+    color: black;
 }
 .col-4 p {
     font-family: 'Pacifico', cursive;
@@ -48,28 +49,29 @@ html {
 .row {
     background-color: #393939;
     float: left;
-    display: flex;
+    position: relative;
+    width: 100%;
+    //    display: flex;
+
 }
+//This is button css
 .animate {
-    transition: all 0.1s;
     -webkit-transition: all 0.1s;
+    @include animate;
 }
 .action-button {
     position: relative;
-    padding: 5px 20px;
-    margin: 0px 5px 5px 0px;
+    padding: 5px 15px;
+    margin: 0px 3px 6px 0px;
     float: left;
     border-radius: 10px;
     font-family: 'Pacifico', cursive;
-    font-size: 15px;
+    font-size: 70%;
     color: #FFF;
     text-decoration: none;
 }
 .btn {
-    margin-left: 17%;
-    background-color: #393939;
-    border-bottom: 5px solid #393939;
-    text-shadow: 0px -2px #393939;
+    @include btn;
 }
 .action-button:hover {
     transform: translate(0px, 5px);
@@ -77,6 +79,7 @@ html {
     border-bottom: 1px solid;
 }
 //this is animation image
+//this css is for 3 image
 *,
 *:after,
 *:before {
@@ -84,46 +87,17 @@ html {
     box-sizing: border-box;
 }
 .col-3 {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    flex: 1;
-    width: 29.7em;
-    height: 15em;
-    float: left;
-    margin: $col-margin;
-    background-color: #ddd4bc;
-    text-align: center;
-}
-.iconic {
-    display: block;
-    margin-left: 8em;
-    margin-top: 3em;
-    width: 200px;
-    height: 150px;
+    @include col-3;
 }
 .content {
-    background: rgba(41, 128, 185, 0.7);
-    bottom: 0;
-    color: white;
-    font-size: 1em;
-    left: 1;
-    opacity: 0;
-    overflow: hidden;
-    padding: 3.75em 3em;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    right: 0;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
+    @include content;
 }
 .content:hover {
     opacity: 1;
 }
 .content:after,
 .content:before {
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(32, 32, 32, 0.7);
     bottom: 1em;
     content: '';
     left: 1em;
@@ -163,8 +137,8 @@ html {
     margin-bottom: 1.5em;
 }
 .col-3:nth-child(2) .content {
-    background: rgba(185, 146, 41, 0.7);
+    background: rgba(209, 197, 183, 0.7);
 }
 .col-3:nth-child(3) .content {
-    background: rgba(128, 185, 41, 0.7);
+    background: rgba(232, 209, 164, 0.7);
 }

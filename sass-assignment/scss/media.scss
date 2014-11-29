@@ -1,0 +1,49 @@
+@import "variable.scss";
+@import "mixins.scss";
+@media all and (min-width: $breakpoint-small) {
+    .col-3 {
+        width: $small-width;
+        margin: $small-margin;
+    }
+    .col-4 {
+        margin: $small-margin;
+        width: $small-width;
+        overflow: hidden;
+        height: 15%;
+    }
+}
+@media all and (min-width: $breakpoint-medium) {
+    .col-3 {
+        width: 60%;
+        margin: $medium-margin;
+    }
+    .col-4 {
+        margin: $col-margin;
+        width: $col-4-width;
+        overflow: hidden;
+    }
+    .col-4 p {
+        overflow: scroll;
+        height: 5em;
+    }
+    .col-4 h4 {
+        font-size: 90%;
+    }
+}
+@media all and (min-width: $breakpoint-large) {
+    .col-3 {
+        width: 29%;
+        float: left;
+        margin: $large-margin;
+    }
+    .col-4 {
+        margin: $col-margin;
+        width: $col-4-width;
+        overflow: hidden;
+        height: 15%;
+    }
+    .btn {
+        margin-left: 17%;
+        overflow: hidden;
+    }
+}

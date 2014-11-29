@@ -1,3 +1,47 @@
+//This mixin is for 4 para
 @mixin col-4() {
+    text-align: center;
+    //    flex: 1;
+    background-color: #ddd4bc;
+    padding-left: $col-4-padding;
+    padding-right: $col-4-padding;
+    float: left;
     transition: all 0.9s ease;
+}
+//this mixin is for button
+@mixin animate() {
+    transition: all 0.1s;
+}
+@mixin btn() {
+    background-color: #393939;
+    border-bottom: 5px solid #393939;
+    text-shadow: 0px -2px #393939;
+}
+//This  mixin is for 3 image para
+@mixin col-3() {
+    display: block;
+    position: relative;
+    vertical-align: top;
+    //    flex: 1;
+    height: 15em;
+    float: left;
+    background-color: #ddd4bc;
+    text-align: center;
+}
+@mixin content() {
+    background: rgba(245, 234, 205, 0.9);
+    bottom: 0;
+    color: black;
+    font-size: 0.9em;
+    font-style: 'Pacifico', cursive;
+    left: 1;
+    opacity: 0;
+    overflow: hidden;
+    padding: 3.75em 3em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
 }

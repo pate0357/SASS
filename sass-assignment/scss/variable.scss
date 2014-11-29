@@ -1,5 +1,14 @@
+// This is for main scss file
 $color-red:#ddd4bc;
  $col-3-width:31.3%;
- $col-4-width:23%;
+ $col-4-width:22%;
  $col-margin:2% 1% 2% 2%;
  $col-4-padding:1%;
+//This is for media query
+$breakpoint-small:400px;
+ $breakpoint-medium:800px;
+ $breakpoint-large:960px;
+ $small-margin:3% 1% 1% 5%;
+ $small-width:90%;
+ $medium-margin:3% 1% 1% 20%;
+ $large-margin:2% 1% 2% 3%;

@@ -1,176 +1,92 @@
-.foot p {
-  color: #ddd4bc;
-  text-align: center; }
+/*
+Error: Invalid CSS after "&:": expected pseudoclass or pseudoelement, was " focus"
+        on line 109 of scss/normaliza.scss
+        from line 5 of scss/main.scss
 
-.foot {
-  background-color: #393939;
-  position: relative;
-  margin-top: -90%;
-  /* negative value of footer height */
-  height: 90%;
-  clear: both; }
+104:     opacity: 0;
+105:     position: absolute;
+106:     right: 1em;
+107:     top: 1em;
+108:     -webkit-transform: scale(1.5);
+109:     -ms-transform: scale(1.5);
+110:     transform: scale(1.5);
+111:     -webkit-transition: 0.6s 0.2s;
+112:     transition: 0.6s 0.2s;
+113: }
+114: .content:before {
 
+Backtrace:
+scss/normaliza.scss:109
+scss/main.scss:5
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:277:in `pseudo'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:160:in `simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:112:in `selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1079:in `expr!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
 body:before {
   white-space: pre;
-  font-family: monospace; }
-
-html {
-  background-color: #ddd4bc;
-  opacity: 1; }
-
-.masthead {
-  text-align: center; }
-
-.masthead h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 25px; }
-
-.col-4 {
-  text-align: center;
-  flex: 1;
-  background-color: #ddd4bc;
-  width: 23%;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin: 2% 1% 2% 2%;
-  float: left;
-  transition: all 0.9s ease; }
-
-.col-4 {
-  opacity: 1; }
-
-.col-4:hover {
-  opacity: 0.5; }
-
-.col-4 p {
-  font-family: 'Pacifico', cursive; }
-
-.col-4 h4 {
-  font-family: 'Pacifico', cursive;
-  background-color: #393939;
-  opacity: 0.5;
-  color: white; }
-
-.row {
-  background-color: #393939;
-  float: left;
-  display: flex; }
-
-.animate {
-  transition: all 0.1s;
-  -webkit-transition: all 0.1s; }
-
-.action-button {
-  position: relative;
-  padding: 5px 20px;
-  margin: 0px 5px 5px 0px;
-  float: left;
-  border-radius: 10px;
-  font-family: 'Pacifico', cursive;
-  font-size: 15px;
-  color: #FFF;
-  text-decoration: none; }
-
-.btn {
-  margin-left: 17%;
-  background-color: #393939;
-  border-bottom: 5px solid #393939;
-  text-shadow: 0px -2px #393939; }
-
-.action-button:hover {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  border-bottom: 1px solid; }
-
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.col-3 {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  flex: 1;
-  width: 29.7em;
-  height: 15em;
-  float: left;
-  margin: 2% 1% 2% 2%;
-  background-color: #ddd4bc;
-  text-align: center; }
-
-.iconic {
-  display: block;
-  margin-left: 8em;
-  margin-top: 3em;
-  width: 200px;
-  height: 150px; }
-
-.content {
-  background: rgba(41, 128, 185, 0.7);
-  bottom: 0;
-  color: white;
-  font-size: 1em;
-  left: 1;
-  opacity: 0;
-  overflow: hidden;
-  padding: 3.75em 3em;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  right: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s; }
-
-.content:hover {
-  opacity: 1; }
-
-.content:after,
-.content:before {
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  bottom: 1em;
-  content: '';
-  left: 1em;
-  opacity: 0;
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transition: 0.6s 0.2s;
-  transition: 0.6s 0.2s; }
-
-.content:before {
-  border-bottom: none;
-  border-top: none;
-  left: 2em;
-  right: 2em; }
-
-.content:after {
-  border-left: none;
-  border-right: none;
-  bottom: 2em;
-  top: 2em; }
-
-.content:hover:after,
-.content:hover:before {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1; }
-
-.content h2 {
-  margin-top: 0; }
-
-.content p {
-  margin-bottom: 1.5em; }
-
-.col-3:nth-child(2) .content {
-  background: rgba(185, 146, 41, 0.7); }
-
-.col-3:nth-child(3) .content {
-  background: rgba(128, 185, 41, 0.7); }
-
-/*# sourceMappingURL=style.css.map */
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"&:\": expected pseudoclass or pseudoelement, was \" focus\"\A         on line 109 of scss/normaliza.scss\A         from line 5 of scss/main.scss\A \A 104:     opacity: 0;\A 105:     position: absolute;\A 106:     right: 1em;\A 107:     top: 1em;\A 108:     -webkit-transform: scale(1.5);\A 109:     -ms-transform: scale(1.5);\A 110:     transform: scale(1.5);\A 111:     -webkit-transition: 0.6s 0.2s;\A 112:     transition: 0.6s 0.2s;\A 113: }\A 114: .content:before {"; }
